@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* *{
+    padding: 0;
+    margin: 0;
+} */
+
+
+
+body{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: #0F141E;
+    background: #F1F1F1;
+}
+
+a{
+    color: #011427;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #778899;
+}
+
+a:active{
+    color: rgb(73, 1, 7);
+}
+
+.container{
+    max-width: 750px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.avatar{
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.info{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.text-info{
+    /* margin-bottom: 20px; */
+    margin-left: 40px;
+}
+
+@media (max-width: 700px){
+    .info{
+        display: block;
+        text-align: center;
+    }
+}
+
+.text-info p{
+    margin: 0;
+    color: #49535d;
+}
+
+.text-info h4{
+    margin-bottom: 5px;
+}
+
+.card{
+    /* background: #A9A9A9; */
+    border: 1px solid #778899;
+    border-radius: 7px;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+}
+
+.bg-white{
+    background: #FAEBD7;
+}
+
+.bg-yellow{
+    background: #FAFAD2;
+}
+
+.bg-blue{
+    background: #B0E0E6;
+}
+
+.card h2{
+    margin-bottom: 10px;
+}
+
+.btn{
+    background: #011427;
+    padding: 15px 30px;
+    color: #F1F1F1;
+    border: none;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.list{
+    padding: 0 20px;
+}
+
+.list li{
+    margin-bottom: 10px;
+}
+
+.table{
+    width: 100%;
+}
+
+.table td{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.table td:nth-child(1){
+    background: #dfdfdf;
+}
+
+.form h2{
+    text-align: center;
+}
+
+.form-row{
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-row .form-group{
+    display: inline-block;
+    margin-right: 20px;
+    width: 50%;
+}
+
+@media (max-width: 700px){
+    .form-row{
+        display: block;
+    }
+
+    .form-row .form-group{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.form-row .form-group:last-child{
+    margin-right: 0;
+}
+
+.form-group label{
+    display: block;
+    /* font-size: 14px; */
+
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    /* border-bottom: 1px solid #ccc; */
+    padding: 15px 0 10px;
+    outline: none;
+}

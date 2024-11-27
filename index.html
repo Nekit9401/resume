@@ -5,76 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="resume, cv">
     <meta name="description" content="Это сайт - резюме">
+    <link rel="stylesheet" href="styles.css">
     <title>My Resume</title>
 </head>
 <body>
+    <div class="container">
 
-    <img src="avatar.jpg" alt="Никита Д.(фейк)" width="200">
+        <div class="info">
+            <img src="avatar.jpg" alt="Никита Д.(фейк)" class="avatar">
 
-    <h1>Никита Данилов</h1>
-    <p>Я <strong>люблю</strong> играть в <strong>футбол</strong>, видеоигры</p>
-    
-    <p>Люблю путешествовать, и еще <strong><em>много чего</em></strong></p>
+            <div class="text-info">
+                <h1>Никита Данилов</h1>
+                <p>Я <strong>люблю</strong> играть в <strong>футбол</strong>, видеоигры</p>
+                
+                <p>Люблю путешествовать, и еще <strong><em>много чего</em></strong></p>
 
-    <h4>Список социальных сетей</h4>
+                <h4>Список социальных сетей</h4>
 
-    <a href="http://" target="_blank">Инстаграм</a>
-    |
-    <a href="http://" target="_blank">Телеграм</a>
-    |
-    <a href="http://" target="_blank">Вконтакте</a>
-    <hr>
-    <h2>Мои хобби</h2>
-    <ul>
-        <li>Спорт</li>
-        <li>Видеоигры</li>
-        <li>Программирование</li>
-        <li>Работа</li>
-    </ul>
-    <hr>
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название работы</th>
-                <th>Должность</th>
-                <th>Период работы</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Саман</td>
-                <td>Кладовщик</td>
-                <td>3 года</td>
-            </tr>
-            <tr>
-                <td>Алиди</td>
-                <td>Комлектовщие</td>
-                <td>4 года</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+                <a href="#" target="_blank">Инстаграм</a>
+                |
+                <a href="#" target="_blank">Телеграм</a>
+                |
+                <a href="#" target="_blank">Вконтакте</a>
+            </div>
         </div>
 
-        <div>
-            <label for="email">Ваш Email:</label>
-            <input type="email" id="email" placeholder="Введите Email">
+        <div class="card bg-white">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Спорт</li>
+                <li>Видеоигры</li>
+                <li>Программирование</li>
+                <li>Работа</li>
+            </ol>
         </div>
 
-        <div>
-            <label for="message">Введите сообщение:</label>
-            <br>
-            <textarea id="message" cols="25" rows="5"></textarea>
+        <div class="card bg-yellow">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Название работы</th>
+                        <th>Должность</th>
+                        <th>Период работы</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Саман</td>
+                        <td>Кладовщик</td>
+                        <td>3 года</td>
+                    </tr>
+                    <tr>
+                        <td>Алиди</td>
+                        <td>Комлектовщие</td>
+                        <td>4 года</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <input type="submit" value="Отправить">
-    </form>
+        <div class="card bg-blue">
+            
+            <form action="/" class="form">
+                <h2>Связаться со мной</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Ваш Email:</label>
+                        <input type="email" id="email" placeholder="Введите Email">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Введите сообщение:</label>
+                    <textarea id="message" cols="25" rows="5"></textarea>
+                </div>
+
+                <input class="btn" type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
 
 
 </body>
